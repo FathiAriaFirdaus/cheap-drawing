@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+header nav {
+  display: flex;
+  gap: 4rem;
+  justify-content: space-around;
+}
+
+header nav .nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+header nav .nav-logo p {
+  font-family: "Dancing Script", cursive;
+}
+
+header nav ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+  transition: all 0.2s ease-in-out;
+  padding: 0.7rem;
+  background-color: gray;
+}
+
+header nav ul li:hover a {
+  background-color: blueviolet;
+  color: white;
+}
+
+main {
+  flex: 1;
+}
+
+main article.get-started {
+  display: flex;
+  flex: 1;
+
+  max-width: 1200px;
+  width: 100%;
+
+  margin-inline: auto;
+  padding: 3rem 5rem;
+  align-items: flex-start;
+
+  gap: 1rem;
+}
+
+main .get-started .content-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  gap: 2.5rem;
+}
+
+main .get-started .content-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+main .get-started .content-2 #second-first {
+  margin-left: 15px;
+}
+
+main .get-started p {
+  font-size: medium;
+}
+
+main article.get-started div#first-first h1 {
+  color: blueviolet;
+  font-size: xx-large;
+}
+
+main article.fundamental {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 3rem 5rem;
+}
+
+main article.fundamental .fundamental-head {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  background-color: blueviolet;
+  border-radius: 16px;
+}
+
+main article.fundamental div.fundamental-content {
+  display: flex;
+  gap: 2rem;
+  padding: 0.5rem;
+}
+
+main article.fundamental h2 {
+  color: blueviolet;
+  font-size: larger;
+}
+
+main article aside {
+  width: 35%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 0.6rem;
+  background-color: blueviolet;
+  width: 200px;
+}
+
+main article aside .tips-aside {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  justify-content: center;
+}
+
+main article aside .tips-aside p {
+  font-size: small;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: blueviolet;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+  main article.get-started {
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem;
+  }
+
+  main aside .tips-aside {
+    align-items: center;
+  }
+
+  header nav {
+    padding-top: 2rem;
+  }
+
+  main .get-started .content-1 {
+    flex-direction: row;
+  }
+
+  main .get-started .content-2 {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main article.fundamental div.fundamental-content {
+    flex-direction: column;
+  }
+
+  main article.fundamental div.fundamental-content img {
+    height: 65%;
+    width: 65%;
+  }
+
+  header nav {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0;
+  }
+
+  header nav ul {
+    padding-inline: 2rem;
+    font-size: smaller;
+  }
+
+  header nav .nav-logo {
+    justify-content: center;
+  }
+
+  main .get-started .content-1 {
+    flex-direction: column;
+  }
+
+  main .get-started .content-2 {
+    flex-direction: column;
+  }
+}
